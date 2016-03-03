@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="eye-logo" horiz-adv-x="1000" >
+<font-face font-family="eye-logo" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="redeye_logo_2015" unicode="&#xe800;" d="m1135 446c0 0-607 413-1027-109 0 0 392 380 1027 109z m-314-60c0-115-93-208-208-208-115 0-208 93-208 208 0 115 93 208 208 208 115 0 208-93 208-208z m-208 146c-87 0-156-70-156-156 0-87 70-156 156-156 86 0 156 70 156 156 0 86-70 156-156 156z m-427-262c0 0 668-368 1117 200 0 0-466-417-1117-200z m493 103c0-36-29-65-65-65-36 0-65 29-65 65 0 36 29 65 65 65 36 0 65-29 65-65z" horiz-adv-x="1357" />
+</font>
+</defs>
+</svg>

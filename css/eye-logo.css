@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'eye-logo';
+  src: url('../font/eye-logo.eot?39570772');
+  src: url('../font/eye-logo.eot?39570772#iefix') format('embedded-opentype'),
+       url('../font/eye-logo.woff?39570772') format('woff'),
+       url('../font/eye-logo.ttf?39570772') format('truetype'),
+       url('../font/eye-logo.svg?39570772#eye-logo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'eye-logo';
+    src: url('../font/eye-logo.svg?39570772#eye-logo') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "eye-logo";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-redeye_logo_2015:before { content: '\e800'; } /* '' */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImV5ZS1sb2dvLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHdCQUF3QjtFQUN4QiwwQ0FBMEM7RUFDMUM7OzttRUFHaUU7RUFDakUsb0JBQW9CO0VBQ3BCLG1CQUFtQjtDQUNwQjtBQUNELGlHQUFpRztBQUNqRyw0RkFBNEY7QUFDNUY7Ozs7Ozs7RUFPRTs7Q0FFRDtFQUNDLHdCQUF3QjtFQUN4QixtQkFBbUI7RUFDbkIsb0JBQW9CO0VBQ3BCLFlBQVk7O0VBRVosc0JBQXNCO0VBQ3RCLHlCQUF5QjtFQUN6QixXQUFXO0VBQ1gsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixrQkFBa0I7O0VBRWxCLGlFQUFpRTtFQUNqRSxxQkFBcUI7RUFDckIscUJBQXFCOztFQUVyQiwrQ0FBK0M7RUFDL0MsaUJBQWlCOztFQUVqQixpRUFBaUU7RUFDakUsMEJBQTBCO0VBQzFCLGtCQUFrQjs7RUFFbEIsMkRBQTJEO0VBQzNELHNCQUFzQjs7RUFFdEIsOENBQThDO0VBQzlDLG9DQUFvQztFQUNwQyxtQ0FBbUM7O0VBRW5DLDZCQUE2QjtFQUM3Qix3REFBd0Q7Q0FDekQ7O0FBRUQsZ0NBQWdDLGlCQUFpQixFQUFFLENBQUMsU0FBUyIsImZpbGUiOiJleWUtbG9nby5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdleWUtbG9nbyc7XG4gIHNyYzogdXJsKCcuLi9mb250L2V5ZS1sb2dvLmVvdD8zOTU3MDc3MicpO1xuICBzcmM6IHVybCgnLi4vZm9udC9leWUtbG9nby5lb3Q/Mzk1NzA3NzIjaWVmaXgnKSBmb3JtYXQoJ2VtYmVkZGVkLW9wZW50eXBlJyksXG4gICAgICAgdXJsKCcuLi9mb250L2V5ZS1sb2dvLndvZmY/Mzk1NzA3NzInKSBmb3JtYXQoJ3dvZmYnKSxcbiAgICAgICB1cmwoJy4uL2ZvbnQvZXllLWxvZ28udHRmPzM5NTcwNzcyJykgZm9ybWF0KCd0cnVldHlwZScpLFxuICAgICAgIHVybCgnLi4vZm9udC9leWUtbG9nby5zdmc/Mzk1NzA3NzIjZXllLWxvZ28nKSBmb3JtYXQoJ3N2ZycpO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG59XG4vKiBDaHJvbWUgaGFjazogU1ZHIGlzIHJlbmRlcmVkIG1vcmUgc21vb3RoIGluIFdpbmRvenplLiAxMDAlIG1hZ2ljLCB1bmNvbW1lbnQgaWYgeW91IG5lZWQgaXQuICovXG4vKiBOb3RlLCB0aGF0IHdpbGwgYnJlYWsgaGludGluZyEgSW4gb3RoZXIgT1MtZXMgZm9udCB3aWxsIGJlIG5vdCBhcyBzaGFycCBhcyBpdCBjb3VsZCBiZSAqL1xuLypcbkBtZWRpYSBzY3JlZW4gYW5kICgtd2Via2l0LW1pbi1kZXZpY2UtcGl4ZWwtcmF0aW86MCkge1xuICBAZm9udC1mYWNlIHtcbiAgICBmb250LWZhbWlseTogJ2V5ZS1sb2dvJztcbiAgICBzcmM6IHVybCgnLi4vZm9udC9leWUtbG9nby5zdmc/Mzk1NzA3NzIjZXllLWxvZ28nKSBmb3JtYXQoJ3N2ZycpO1xuICB9XG59XG4qL1xuIFxuIFtjbGFzc149XCJpY29uLVwiXTpiZWZvcmUsIFtjbGFzcyo9XCIgaWNvbi1cIl06YmVmb3JlIHtcbiAgZm9udC1mYW1pbHk6IFwiZXllLWxvZ29cIjtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBzcGVhazogbm9uZTtcbiBcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB0ZXh0LWRlY29yYXRpb246IGluaGVyaXQ7XG4gIHdpZHRoOiAxZW07XG4gIG1hcmdpbi1yaWdodDogLjJlbTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAvKiBvcGFjaXR5OiAuODsgKi9cbiBcbiAgLyogRm9yIHNhZmV0eSAtIHJlc2V0IHBhcmVudCBzdHlsZXMsIHRoYXQgY2FuIGJyZWFrIGdseXBoIGNvZGVzKi9cbiAgZm9udC12YXJpYW50OiBub3JtYWw7XG4gIHRleHQtdHJhbnNmb3JtOiBub25lO1xuIFxuICAvKiBmaXggYnV0dG9ucyBoZWlnaHQsIGZvciB0d2l0dGVyIGJvb3RzdHJhcCAqL1xuICBsaW5lLWhlaWdodDogMWVtO1xuIFxuICAvKiBBbmltYXRpb24gY2VudGVyIGNvbXBlbnNhdGlvbiAtIG1hcmdpbnMgc2hvdWxkIGJlIHN5bW1ldHJpYyAqL1xuICAvKiByZW1vdmUgaWYgbm90IG5lZWRlZCAqL1xuICBtYXJnaW4tbGVmdDogLjJlbTtcbiBcbiAgLyogeW91IGNhbiBiZSBtb3JlIGNvbWZvcnRhYmxlIHdpdGggaW5jcmVhc2VkIGljb25zIHNpemUgKi9cbiAgLyogZm9udC1zaXplOiAxMjAlOyAqL1xuIFxuICAvKiBGb250IHNtb290aGluZy4gVGhhdCB3YXMgdGFrZW4gZnJvbSBUV0JTICovXG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xuIFxuICAvKiBVbmNvbW1lbnQgZm9yIDNEIGVmZmVjdCAqL1xuICAvKiB0ZXh0LXNoYWRvdzogMXB4IDFweCAxcHggcmdiYSgxMjcsIDEyNywgMTI3LCAwLjMpOyAqL1xufVxuIFxuLmljb24tcmVkZXllX2xvZ29fMjAxNTpiZWZvcmUgeyBjb250ZW50OiAnXFxlODAwJzsgfSAvKiAn7qCAJyAqLyJdfQ== */

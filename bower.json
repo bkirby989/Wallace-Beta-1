@@ -1,0 +1,9 @@
+{
+  "name": "foundation-libsass-template",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  },
+  "resolutions": {
+    "angular": "1.3.15"
+  }
+}

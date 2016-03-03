@@ -1,0 +1,23 @@
+<div class="comments-wrapper" ng-class="{visible: comments.visible}">
+	<i class="fi-x" id="exit-comments" ng-click="comments.visible = false"></i>
+<h3>{{post.commentStatus}}</h3>
+<button  ng-show="post.openComments" ng-click="showAddCommentForm()"  class="add-comment-button">Write a comment</button>
+
+<bc-comment-form comment="comment" form="form"></bc-comment-form>
+
+<div class="comment-container">
+
+
+	
+
+	<div ng-repeat="comment in post.otherComments | orderBy :'-date'">
+
+
+			<bc-comment class="comment user-comment top-comment" ng-class="{'loading': comment.isLoading, 'child-comment': comment.isReply}" comment="comment" post="post"></bc-comment>
+
+	</div>
+</div>
+</div>
+
+
+

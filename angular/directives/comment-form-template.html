@@ -1,0 +1,25 @@
+
+<div class="comment-form" ng-if="form.newCommentFormVisibility">
+	<form name="commentForm">
+		<input type="text" required name="name" ng-class='{cached: submission.cacheLoaded}' ng-model="submission.name" placeholder="Name...">
+		<i ng-show="commentForm.name.$valid && !commentForm.name.$pristine" class="fi-check" id="name-check"></i>
+		<input type="email" required name="email" validate-email ng-class="{cached: submission.cacheLoaded}" ng-model="submission.email" placeholder="Email (This won't be published)...">
+		<i ng-show="commentForm.email.$valid && !commentForm.email.$pristine" class="fi-check email-indicator" id="check"></i>
+		<i ng-show="!commentForm.email.$valid && !commentForm.email.$pristine" class="fi-x email-indicator" id="x"></i>
+		<textarea rows="6" ng-disabled="!commentForm.$valid" ng-keyup="commentKeyPress($event)" id="comment-content" ng-model="submission.content" placeholder="Comment..."></textarea>
+		<!-- <div id="comment-login">
+			<p id="login-prompt">Login for quicker commenting:</p>
+			<div id="social-login">
+				<i class="ion-social-wordpress comment-social-icon"></i>
+				<i class="fi-social-twitter comment-social-icon"></i>
+				<i class="fi-social-facebook comment-social-icon"></i>
+				<i class="fi-social-google-plus comment-social-icon"></i>
+				<i class="fi-social-linkedin comment-social-icon"></i>
+
+
+			</div>
+		</div> -->
+		<button id="cancel-button" ng-click="cancel()">Cancel</button>
+		<button id="submit-button" ng-disabled="!commentForm.$valid" ng-click="submit()">Submit</button>
+	</form>
+</div>

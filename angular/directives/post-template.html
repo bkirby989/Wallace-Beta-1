@@ -1,0 +1,74 @@
+
+<div id="row-wrapper">   
+
+
+<div class="row" id="content-row">
+
+<div class="small-12 small-centered column main-section" >
+
+         
+
+		 <h1 id="post-title" ng-bind-html="post.title.rendered"></h1>
+
+		 <article post="post" bc-asides compile="post.content.rendered">
+
+		 </article>
+
+
+
+
+		<div class="signature">
+		<p>- {{post.date | date : 'MMMM yyyy'}}</p>
+		</div>
+
+
+
+
+			
+
+</div>
+<div class="bottom-post-nav">
+			<div class="bottom-post-nav-item" id="share-button">
+				<div ng-class="{active: post.socialSharingVisible}" ng-click="showSocialSharingOptions()">
+					<i class="fi-share"></i>
+					<p>Share</p>
+				</div>
+			</div>
+
+			<div class="bottom-post-nav-item" id="next-article-button">
+				<div ng-click="toggleSidebar()">
+					<i class="fi-page-export"></i>
+					<p>More Articles..</p>
+				</div>
+			</div>
+
+			<div class="bottom-post-nav-item" id="open-comments-button">
+				<div ng-class="{active: comments.visible}" ng-click="openComments()">
+					<i class="fi-comment"></i>
+					<p>{{comments.length}} Comments</p>
+				</div>
+			</div>
+
+		</div>
+</div>
+
+</div>
+
+<bc-aside-sidebar post="post" class="right-bar">
+	
+</bc-aside-sidebar>
+<bc-comments onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';" post="post" comments="comments"></bc-comments>
+<bc-aside-modals></bc-aside-modals>
+
+<div class="ng-hide" ng-cloak ng-show="post.socialSharingVisible" id="social-sharing-modal">
+		<i class="fi-x" ng-click="post.socialSharingVisible = !post.socialSharingVisible"></i>
+
+	<button ng-click="socialShare('facebook')" id="fb-share">Facebook</button><br>
+	<button ng-click="socialShare('twitter')" id="twitter-share">Twitter</button><br>
+	<button ng-click="socialShare('linkedin')" id="linkedin-share">LinkedIn</button><br>
+	<button ng-click="socialShare('googleplus')" id="google-share">Google+</button>
+
+</div>
+<div id="animation-container">
+
+</div>

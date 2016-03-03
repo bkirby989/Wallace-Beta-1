@@ -1,0 +1,24 @@
+<i id="non-fixed-home" class="fi-home" ng-click='goToHome()'></i>  
+
+     
+
+
+<div id="top-bar" ng-class="{visible: topBar.visible}">
+
+<div id="top-nav-1">
+  <i class="fi-home" ng-click='goToHome()'></i>
+</div>
+
+
+<div id="top-post-header" class="blog-title">
+  <h3 id="site-title" ng-bind-html="siteTitle"></h3> | <h3 id="top-post-title" ng-bind-html="post.title.rendered"></h3>
+</div>
+
+
+  <ul id="top-nav-2">
+  	<div id="comment-icon-wrapper" ng-click="openComments()">
+    	<i class="fi-comment" ng-class="{active: comments.visible}"></i>
+        <div id="comment-count">{{comments.length}}</div>
+	</div>
+   </ul>
+ </div>

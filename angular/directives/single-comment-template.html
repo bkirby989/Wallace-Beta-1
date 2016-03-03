@@ -1,0 +1,19 @@
+<div class="comment-wrapper" >
+<p>{{comment.author_name}} wrote:</p>
+<span ng-class='{"fade": comment.success }' id="status">{{comment.statusMessage}}</span>
+	<div class="comment-content" ng-bind-html="comment.safeContent"></div>
+	<div class='date-reply'>
+		<p class='comment-date'> {{comment.date | date : 'd MMMM yyyy'}}</p>
+		<p class='comment-reply' ng-show="post.openComments"><a ng-click="comment.showAddReplyForm()">Reply</a></p>
+	</div>
+
+</div>
+
+<bc-comment-form comment="comment" form="form"></bc-comment-form>
+
+
+<div class='child-comments' ng-repeat='reply in comment.descendants | orderBy:"date"'>
+
+<bc-comment class='comment user-comment top-comment' ng-class='{"loading": reply.isLoading, "child-comment": reply.isReply}' comment='reply' post='post'></bc-comment>	 
+
+ </div>

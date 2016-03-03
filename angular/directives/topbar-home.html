@@ -1,0 +1,30 @@
+<div id="top-bar-home">
+
+
+
+<div class="top-nav-1">
+<div id="site-title-home" class="blog-title">
+  <h1 ng-click="goToHome()">{{siteTitle}}</h1>
+<!--   <h5 ng-bind-html="siteInfo.description"></h5>
+ --></div>
+</div>
+
+
+
+<div class="top-nav-2">
+
+	<!-- <div id="mobile-sandwich" ng-click="mobilePageList.visible = !mobilePageList.visible">
+		<i class="fi-list"></i>
+		<ul id="mobile-page-list" ng-show="mobilePageList.visible">
+			<li ng-repeat="page in pages" ng-click="goToPage(page.slug)">{{page.title}}</li>
+			<li ng-click="goToPage(lastPage.slug)">{{lastPage.title}}</li>
+		</ul>
+	</div> -->
+
+	<div id="page-list">
+
+  		<div class="page-link" ng-repeat="page in pages"> <span ng-class="{active: page.active}" ng-bind-html="page.title.rendered" ng-click="goToPage(page.slug)"></span><span id="pipe"> |</span></div>
+  		
+	</div>
+ </div>
+ </div>

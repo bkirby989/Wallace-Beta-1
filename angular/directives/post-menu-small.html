@@ -1,0 +1,32 @@
+
+<div class="sidebar-content">
+
+
+	<div class="sidebar" >
+		<div class="sidebar-button-container" ng-click="toggleSidebar()">
+			<a>
+				<div class="sidebar-button" ng-show='smallPostMenu.visible'>
+					<i class="fi-list" ng-show="smallMenuToggle"></i>
+					<i class="fi-x" ng-show="!smallMenuToggle"></i>
+				</div>
+			</a>
+		</div>
+		<ul>
+			<div id="category-label" ng-class="{active: showCategoryList}" ng-click="showCategoryList = !showCategoryList">
+				<p>{{selectedCategory}}</p>
+				<i ng-show="!smallPostMenu.visible" ng-click="toggleSidebar()" class="fi-x"></i>
+			</div>
+			<ul id="category-list" ng-show="showCategoryList">
+					<li ng-click="selectCategory(-1)">All Categories</li>
+					<li ng-repeat="category in categories" ng-click="selectCategory(category)">{{category.name}}</li>
+					
+			</ul>
+
+			<div ng-repeat="post in posts" ng-show="postHasCurrentCategory(post.category_data)" class="menu-container" ng-click="goToPost(post.slug, $event)" ng-class="{'active': (posts.active == post.id) }">
+			  <li><a><p ng-bind-html="post.title.rendered"></p></a></li>
+			</div>
+		</ul>
+
+		
+	</div>
+</div>

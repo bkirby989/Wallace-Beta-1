@@ -1,0 +1,52 @@
+[
+    {
+        "ID": 1,
+        "title": "Hello world muckerfuckas!",
+        "status": "publish",
+        "type": "post",
+        "author": {
+            "ID": 1,
+            "name": "admin",
+            "slug": "admin",
+            "URL": "",
+            "avatar": "http:\/\/0.gravatar.com\/avatar\/c57c8945079831fa3c19caef02e44614&d=404&r=G",
+            "meta": {
+                "links": {
+                    "self": "http:\/\/example.com\/wp-json\/users\/1",
+                    "archives": "http:\/\/example.com\/wp-json\/users\/1\/posts"
+                }
+            }
+        },
+        "content": "Welcome to AJAX Wordpress, biitttch",
+        "parent": 0,
+        "link": "http:\/\/example.com\/2012\/10\/31\/hello-world\/",
+        "date": "2012-10-31T18:26:17+10:00",
+        "modified": "2012-10-31T18:26:17+10:00",
+        "format": "standard",
+        "terms": {
+            "category": {
+                "ID": 1,
+                "name": "Uncategorized",
+                "slug": "uncategorized",
+                "group": 0,
+                "parent": 0,
+                "count": 1,
+                "meta": {
+                    "links": {
+                        "collection": "http:\/\/example.com\/wp-json\/taxonomy\/category",
+                        "self": "http:\/\/example.com\/wp-json\/taxonomy\/category\/terms\/1"
+                    }
+                }
+            }
+        },
+        "meta": {
+            "links": {
+                "self": "http:\/\/example.com\/wp-json\/posts\/1",
+                "author": "http:\/\/example.com\/wp-json\/users\/1",
+                "collection": "http:\/\/example.com\/wp-json\/posts",
+                "replies": "http:\/\/example.com\/wp-json\/posts\/1\/comments",
+                "version-history": "http:\/\/example.com\/wp-json\/posts\/1\/revisions"
+            }
+        }
+    }
+]
